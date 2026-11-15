@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #FAF9F6;
+    --card-white: #FFFFFF;
+    --sage-soft: #DDE9DF;
+    --green-primary: #547B65;
+    --green-dark: #294D3C;
+    --peach-soft: #F5E3D7;
+    --blue-pale: #E5EEF5;
+    --lavender-light: #ECE8F5;
+    --text-main: #29352F;
+    --text-muted: #788078;
+    --border-subtle: #E6E9E4;
+    --status-success: #2E7D55;
+    --status-warning: #C58A38;
+    --status-error: #C94C4C;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-main);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: 'Newsreader', Georgia, serif;
+  }
+}
+
+/* Custom rounded card and soft shadow styles inspired by Little Oaks reference */
+.hospital-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E6E9E4;
+  border-radius: 18px;
+  box-shadow: 0 4px 20px -2px rgba(41, 77, 60, 0.05);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hospital-card:hover {
+  box-shadow: 0 8px 30px -4px rgba(41, 77, 60, 0.09);
+}
+
+.hospital-card-interactive {
+  background-color: #FFFFFF;
+  border: 1px solid #E6E9E4;
+  border-radius: 18px;
+  box-shadow: 0 4px 20px -2px rgba(41, 77, 60, 0.05);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hospital-card-interactive:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 32px -4px rgba(41, 77, 60, 0.1);
+  border-color: #DDE9DF;
+}
+
+/* Badges */
+.badge-sage {
+  background-color: #DDE9DF;
+  color: #294D3C;
+}
+
+.badge-peach {
+  background-color: #F5E3D7;
+  color: #8C4320;
+}
+
+.badge-blue {
+  background-color: #E5EEF5;
+  color: #2A5372;
+}
+
+.badge-lavender {
+  background-color: #ECE8F5;
+  color: #4A3A75;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF9F6;
+}
+::-webkit-scrollbar-thumb {
+  background: #DDE9DF;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #547B65;
+}

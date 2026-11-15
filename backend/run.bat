@@ -1,0 +1,3 @@
+@echo off
+echo Starting Evergreen Care Hospital Backend Server on http://localhost:8080 ...
+hospital_server.exe 8080
